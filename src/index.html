@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>website-creater</title>
+    @@include('./g-head.html')
+</head>
+
+<body>
+    @@include('./g-body-header.html',{ "pageName": "index"})
+
+    <main class="page-index-wrapper">
+        <!-- 抬头 -->
+        <section class="index-main-header container">
+            <div class="row">
+                <div class="index-main-header-content col-md-offset-2 col-md-8">
+                    <img class="img hidden-xs" src="./img/logo.png" />
+                    <div class="title-wrapper col-xs-12">
+                        <h1>website-creater</h1>
+                        <h4>基于gulp4的静态网页生成器；适用于简单官网的快速搭建</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 特征 -->
+        <section class="index-main-features container">
+            <div class="row">
+                <div class="index-main-features-item col-xs-6 col-md-3">
+                    <div class="features-item-hover"></div>
+                    <span class="features-item-icon-wrapper"><i class="hard-icon"></i></span>
+                    <p class="features-item-title">快捷</p>
+                    <p class="features-item-dec">快速搭建</p>
+                </div>
+                <div class="index-main-features-item col-xs-6 col-md-3">
+                    <div class="features-item-hover"></div>
+                    <span class="features-item-icon-wrapper"><i class="soft-icon"></i></span>
+                    <p class="features-item-title">快捷</p>
+                    <p class="features-item-dec">快速搭建</p>
+                </div>
+                <div class="index-main-features-item col-xs-6 col-md-3">
+                    <div class="features-item-hover"></div>
+                    <span class="features-item-icon-wrapper"><i class="integral-icon"></i></span>
+                    <p class="features-item-title">快捷</p>
+                    <p class="features-item-dec">快速搭建</p>
+                </div>
+                <div class="index-main-features-item col-xs-6 col-md-3">
+                    <div class="features-item-hover"></div>
+                    <span class="features-item-icon-wrapper"><i class="client-icon"></i></span>
+                    <p class="features-item-title">快捷</p>
+                    <p class="features-item-dec">快速搭建</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    @@include('./g-body-footer.html')
+</body>
+@@include('./g-foot.html')
+
+<script>
+    window.App.index.init();
+    window.App.header.scrollWheel();
+</script>
+
+</html>

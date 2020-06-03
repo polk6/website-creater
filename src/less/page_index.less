@@ -1,0 +1,154 @@
+/* index.html */
+.page-index-wrapper {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	padding: 0 0 50px 0;
+	color: #333333;
+	list-style: none;
+	z-index: 1;
+	/* header区域 */
+	.index-main-header {
+		padding: 150px 0 0px 0;
+		.index-main-header-content {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			.img {
+				margin: 0 60px 0 0;
+			}
+			.title-wrapper {
+				padding: 20px 0 0 0;
+				h1 {
+					padding: 5px 0 0 0;
+					line-height: 1.2;
+				}
+				h4 {
+					padding: 10px 0 0 0;
+					line-height: 1.5;
+				}
+			}
+		}
+	}
+	/* 特点 */
+	.index-main-features {
+		margin-top: 120px;
+		.index-main-features-item {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			.features-item-hover {
+				position: absolute;
+				z-index: 1;
+				top: 0;
+				width: 237px;
+				height: 211px;
+				background: url("../img/index-features-hover.png") no-repeat;
+				background-size: contain;
+				-webkit-transform: scale(0);
+				-ms-transform: scale(0);
+				transform: scale(0);
+			}
+			.features-item-icon-wrapper {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background: #fff;
+				width: 200px;
+				height: 200px;
+				border-radius: 50%;
+				box-shadow: 1px 1px 18px 0px #e8ecf6;
+				.hard-icon {
+					width: 100px;
+					height: 100px;
+					background: url("../img/index-features-hard.png") no-repeat;
+					background-size: contain;
+				}
+				.soft-icon {
+					width: 100px;
+					height: 100px;
+					background: url("../img/index-features-soft.png") no-repeat;
+					background-size: contain;
+				}
+				.integral-icon {
+					width: 100px;
+					height: 100px;
+					background: url("../img/index-features-integral.png") no-repeat;
+					background-size: contain;
+				}
+				.client-icon {
+					width: 100px;
+					height: 100px;
+					background: url("../img/index-features-client.png") no-repeat;
+					background-size: contain;
+				}
+			}
+			.features-item-title {
+				margin: 20px 0 0;
+				text-align: center;
+				font-size: 22px;
+				color: #151515;
+			}
+			.features-item-dec {
+				margin: 13px 0 0;
+				text-align: center;
+				font-size: 14px;
+				color: #5d5d5d;
+			}
+			&:hover {
+				.eatures-item-icon {
+					transform: translateY(-10px);
+				}
+				@keyframes show {
+					0% {
+						transform: scale(0);
+					}
+
+					to {
+						transform: scale(1);
+					}
+				}
+				.features-item-hover {
+					animation: show .3s forwards;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.page-index-wrapper {
+		.index-main {
+			/* 特点区域 */
+			.index-main-features {
+				margin-top: 120px;
+				.index-main-features-item {
+					margin-bottom: 80px;
+					.features-item-icon-wrapper {
+						height: 100px;
+						background: none;
+						box-shadow: none;
+					}
+				}
+			}
+			/* 特点区域 */
+			.index-main-hard {
+				.index-main-hard-item {
+					padding-bottom: 30px;
+				}
+			}
+			/* 软件区域 */
+			.about-main-soft {
+				.about-main-soft-carousel {
+					.carousel-inner .item-wrapper {
+						flex-wrap: wrap;
+						justify-content: center;
+					}
+				}
+			}
+		}
+	}
+}

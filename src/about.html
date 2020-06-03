@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>website-creater-关于</title>
+    @@include('./g-head.html')
+</head>
+
+<body>
+    @@include('./g-body-header.html', { "pageName": "about"})
+
+    <main class="m-about-wrapper">
+        <section class="about-main-section ">
+            <div class="row">
+                <div class="about-main-section-content col-md-offset-2 col-md-8">
+                    <img class="img" src="./img/logo.png" />
+                    <div class="title-wrapper col-xs-12">
+                        <h2>关于我们</h2>
+                        <h4>基于gulp4的静态网页生成器；适用于简单官网的快速搭建</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-main-soft">
+            <div class="about-main-soft-title-wrapper">
+                <h2 class="title">多样化的支持</h2>
+            </div>
+            <div class="row">
+                <div id="page_about_carousel" class="about-main-soft-carousel carousel slide">
+                    <!-- 轮播（Carousel）指标 -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#page_about_carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#page_about_carousel" data-slide-to="1"></li>
+                        <li data-target="#page_about_carousel" data-slide-to="2"></li>
+                    </ol>
+                    <!-- 轮播（Carousel）项目 -->
+                    <div class="carousel-inner">
+                        <div class="item active row">
+                            <div class="col-md-offset-2 col-md-8">
+                                <div class="item-wrapper row">
+                                    <div class="img-wrapper col-md-6">
+                                        <img class="img" src="img/index-features-client.png" />
+                                    </div>
+                                    <div class="content-wrapper col-md-6">
+                                        <h3>快捷1</h3>
+                                        <p>基于gulp4的静态网页生成器；适用于简单官网的快速搭建</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item row">
+                            <div class="col-md-offset-2 col-md-8">
+                                <div class="item-wrapper row">
+                                    <div class="img-wrapper col-md-6">
+                                        <img class="img" src="img/index-features-integral.png" />
+                                    </div>
+                                    <div class="content-wrapper col-md-6">
+                                        <h3>快捷2</h3>
+                                        <p>基于gulp4的静态网页生成器；适用于简单官网的快速搭建</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item row">
+                            <div class="col-md-offset-2 col-md-8">
+                                <div class="item-wrapper row">
+                                    <div class="img-wrapper col-md-6">
+                                        <img class="img" src="img/index-features-search.png" />
+                                    </div>
+                                    <div class="content-wrapper col-md-6">
+                                        <h3>快捷3</h3>
+                                        <p>基于gulp4的静态网页生成器；适用于简单官网的快速搭建</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    @@include('./g-body-footer.html')
+</body>
+@@include('./g-foot.html')
+<script>
+    window.App.about.init();
+    window.App.header.scrollWheel();
+</script>
+
+</html>

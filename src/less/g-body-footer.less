@@ -1,0 +1,47 @@
+.g-body-footer {
+    position: relative;
+    color: #ffffff;
+    background-color: #181818;
+    .g-body-footer-icp {
+        padding: 40px 0;
+        background-color: #181818;
+        .sub-content {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+/* 返回顶部 */
+.footer-goTop-wrapper {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    cursor: pointer;
+    li {
+        padding: 5px 8px;
+        height: 55px;
+        width: 55px;
+        border: 1px solid #f5c938;
+        border-radius: 4px;
+        background-color: #f5c938;
+        box-shadow: 0 8px 8px 0 rgba(188, 207, 15, 0.3);
+        font-size: 30px;
+        color: #fff;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .g-body-footer {
+        .g-body-footer-inner {
+            width: 100%;
+            .info-wrapper {
+                padding-left: 10%;
+            }
+            .qr-wrapper{
+                margin-top: 40px;
+            }
+        }
+    }
+}

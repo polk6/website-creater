@@ -1,0 +1,28 @@
+{
+  "name": "website-creater",
+  "version": "1.0.0",
+  "description": "基于gulp4的静态网页生成器；适用于简单官网的快速搭建",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp build"
+  },
+  "author": "polk6",
+  "license": "MIT",
+  "devDependencies": {
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^3.9.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-file-include": "^2.0.1",
+    "gulp-less": "^3.5.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "less-plugin-autoprefix": "^1.5.1"
+  },
+  "dependencies": {
+    "natives": "^1.1.6"
+  }
+}

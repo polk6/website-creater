@@ -1,0 +1,30 @@
+<header class="g-body-header">
+    <nav class="navbar navbar-fixed-top headerBg" role="navigation" id="g_body_header_nav">
+        <div class="row inner">
+            <div class="col-xs-12 col-sm-4">
+                <button type="button" class="navbar-toggle iconfont icon-menu" data-toggle="collapse" data-target="#g_header_navbar_collapse">
+                </button>
+                <a class="navbar-brand logo" href="/index.html" title="GitHub">
+                    <img id="index_header_logo" src="/img/logo.png" />
+                    <span class="title">website-creater</span>
+                </a>
+            </div>
+            <div class="col-sm-8 collapse navbar-collapse" id="g_header_navbar_collapse">
+                <ul class="nav navbar-nav">
+                    @@if (pageName==='index' ) {
+                    <li><a href="/index.html" title="首页" class="active">首页</a></li>
+                    <li><a href="/about.html" title="关于">关于</a></li>
+                    }
+                    @@if (pageName==='about' ) {
+                    <li><a href="/index.html" title="首页">首页</a></li>
+                    <li><a href="/about.html" title="关于" class="active">关于</a></li>
+                    }
+                    @@if (['index','about'].indexOf(pageName) <= -1 ) {
+                    <li><a href="/index.html" title="首页">首页</a></li>
+                    <li><a href="/about.html" title="关于">关于</a></li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
